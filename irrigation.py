@@ -8,7 +8,7 @@ GPIO.setwarnings(False)
 
 GPIO.setmode(GPIO.BCM)
 
-channel = 14
+channel = 25
 GPIO.setup(channel, GPIO.OUT, initial=GPIO.LOW)
 
 #res = raw_input('Enter desired water volume: ')
