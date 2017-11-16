@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import peewee
 from irrigation import irrigate
 from datetime import timedelta,datetime
 from peewee import *
@@ -13,7 +12,7 @@ import math
 import sys
 import numpy as np
 
-dbase = MySQLDatabase('irrigation', host='localhost', user='irrigation', passwd='galgsteidh63f=')
+dbase = MySQLDatabase('irrigation', host='localhost', user='irrigation', passwd='')
 dbase.connect()
 
 class Settings(peewee.Model):
@@ -98,4 +97,4 @@ dbase.close()
 
 
 if (m < trigger_m and datetime.now() > (last_irrigation + timedelta(hours=trigger_t))):
-	irrigate(volume)
+      irrigate(volume)
