@@ -1,0 +1,23 @@
+div.main {
+	width: 100%;
+	height: 100%;
+}
+div.control {
+	float: left;
+	width: 20%;
+}
+div.measurements {
+	margin-left: 21%;
+}
+.results {
+	width: 100%;
+	background-color: rgba(130,234,130,0.75);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	font-size: 1.5em;
+}
+.results.hidden {
+	display: none;
+}
